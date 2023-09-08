@@ -5,7 +5,7 @@ import CardUserImg from '../cardUserImg/CardUserImg';
 
 const CardFooter = () => {
   return (
-    <div>
+    <div className={styles.row}>
       <CardBtnContainer />
       <CardUserImg />
     </div>
