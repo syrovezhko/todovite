@@ -21,9 +21,10 @@ const Main = () => {
         if (isLoading) return "Loading...";
         if (error) return `Something went wrong: ${error.message}`;
         if (data) {
+            const todo = data;
           return (
             <main>
-              {data.map((i: IData) => 
+              {todo.map((i: IData) => 
               <Card
                 userId={i.userId}
                 key={i.id}
