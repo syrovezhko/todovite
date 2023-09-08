@@ -9,10 +9,10 @@ const fetchData = () =>
     .then(res => res.json());
 
 export interface IData {
-  userId: number;
-  id: number;
-  title: string;
-  completed: boolean;
+  userId?: number;
+  id?: number;
+  title?: string;
+  completed?: boolean;
 }
 const Main = () => {
   return (
