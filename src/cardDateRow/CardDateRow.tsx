@@ -1,4 +1,5 @@
 import React from 'react';
+import CardDate from '../cardDate/CardDate';
 import styles from './CardDateRow.module.scss';
 
 const CardDateRow = () => {
@@ -17,6 +18,8 @@ const CardDateRow = () => {
   const endDate = randomDate(new Date(2023, 0, 1), new Date());
   return (
     <div className={styles.row}>
+      <CardDate date={startDate} />
+      <CardDate date={endDate} />
     </div>
   );
 };
