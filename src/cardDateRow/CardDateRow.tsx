@@ -13,6 +13,8 @@ const CardDateRow = () => {
     };
     return date.toLocaleString('en-US', options);
   };
+  const startDate = randomDate(new Date(2023, 0, 1), new Date());
+  const endDate = randomDate(new Date(2023, 0, 1), new Date());
   return (
     <div className={styles.row}>
     </div>
