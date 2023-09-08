@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 import styles from './CardText.module.scss';
 
 const CardText = () => {
-  const text = faker.lorem.words(50)
+  const text = faker.lorem.words(50);
   return <p>{text}</p>;
 };
 
