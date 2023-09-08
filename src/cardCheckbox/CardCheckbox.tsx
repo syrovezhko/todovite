@@ -10,7 +10,7 @@ const CardCheckbox: FC<ICheckbox> = ({completed, setChecked}) => {
     <input
       type="checkbox"
       checked={completed}
-      onClick={()=>setChecked(!completed)}/>
+      onChange={() => setChecked(!completed)}/>
   );
 };
 
