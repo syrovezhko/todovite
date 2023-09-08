@@ -1,11 +1,12 @@
 import Header from './header/Header'
+import Main from './main/Main'
 
 function App() {
 
   return (
     <>
-    jjjjjjjj
-    <h1>rrrrrrrrrrrr</h1>
+    <Header/>
+    <Main/>
     </>
   )
 }
