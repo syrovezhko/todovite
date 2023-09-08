@@ -13,7 +13,7 @@ const Card: FC<IData> = ({ userId, id, title, completed }) => {
       <CardCheckbox completed={checked} setChecked={setChecked} />
       <CardTitle title={title} />
       <CardDateRow />
-      <CardText/>
+      <CardText />
     </form>
   );
 };
