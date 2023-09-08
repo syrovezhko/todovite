@@ -5,13 +5,8 @@ interface ICheckbox extends IData {
   setChecked: CallableFunction;
 }
 
-const CardCheckbox: FC<ICheckbox> = ({completed, setChecked}) => {
-  return (
-    <input
-      type="checkbox"
-      checked={completed}
-      onChange={() => setChecked(!completed)}/>
-  );
+const CardCheckbox: FC<ICheckbox> = ({ completed, setChecked }) => {
+  return <input type="checkbox" checked={completed} onChange={() => setChecked(!completed)} />;
 };
 
 export default CardCheckbox;
