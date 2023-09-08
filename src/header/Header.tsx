@@ -5,7 +5,7 @@ import HeaderSide from '../headerSide/HeaderSide';
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.row}>
       <HeaderTitle />
       <HeaderSide />
     </header>
