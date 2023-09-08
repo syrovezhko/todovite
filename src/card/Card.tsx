@@ -5,6 +5,7 @@ import { IData } from '../main/Main';
 import CardTitle from '../cardTitle/CardTitle';
 import CardDateRow from '../cardDateRow/CardDateRow';
 import CardText from '../cardText/CardText';
+import CardFooter from '../cardFooter/CardFooter';
 
 const Card: FC<IData> = ({ userId, id, title, completed }) => {
   const [checked, setChecked] = useState(completed);
@@ -14,6 +15,7 @@ const Card: FC<IData> = ({ userId, id, title, completed }) => {
       <CardTitle title={title} />
       <CardDateRow />
       <CardText />
+      <CardFooter />
     </form>
   );
 };
