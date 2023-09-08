@@ -7,10 +7,12 @@ import CardTitle from '../cardTitle/CardTitle';
 const Card: FC<IData> = ({userId, id, title, completed}) => {
   const [checked, setChecked] = useState(completed)
   return (
+    <form>
       <CardCheckbox
         completed={checked}
         setChecked={setChecked}/>
       <CardTitle title={title}/>
+    </form>
   );
 };
 
