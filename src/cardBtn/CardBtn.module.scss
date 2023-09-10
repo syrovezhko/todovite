@@ -1,0 +1,41 @@
+.btn {
+  border: none;
+  font-family: 'Segoe UI';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16.8px;
+  border-radius: 4px;
+  height: 20px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  cursor: pointer;
+}
+
+.primary {
+  background: #b233a6;
+  padding: 1px 6px 2px 6px;
+  color: #fff;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #616c82;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 72px;
+  padding: 0;
+  & > p {
+    width: 54px;
+    height: 100%;
+    padding-left: 6px;
+    padding-top: 1px;
+    display: flex;
+    flex-grow: 3;
+    border-radius: 4px 0 0 4px;
+
+    background-color: #ebeef6;
+  }
+}
