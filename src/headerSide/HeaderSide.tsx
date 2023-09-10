@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './HeaderSide.module.scss';
 import HeaderAddBtn from '../headerAddBtn/HeaderAddBtn';
 import HeaderDisplay from '../headerDisplay/HeaderDisplay';

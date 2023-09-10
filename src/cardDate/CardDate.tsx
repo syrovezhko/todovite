@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './CardDate.module.scss';
 import { useRandomDate } from '../hooks/useRandomDate';
 

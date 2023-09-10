@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './CardBtn.module.scss';
 import img from './../../public/cardBtn.svg';
 

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { IData } from '../main/Main';
 import styles from './CardTitle.module.scss';
 

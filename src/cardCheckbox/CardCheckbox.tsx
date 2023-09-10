@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { IData } from '../main/Main';
 import styles from './CardCheckbox.module.scss';
 import { observer } from 'mobx-react-lite';
@@ -6,7 +6,7 @@ import todo from '../store/todo';
 
 interface ICheckbox extends IData {
   setChecked: CallableFunction;
-  key: number;
+  key?: any;
 }
 
 const CardCheckbox: FC<ICheckbox> = observer(({ completed, setChecked, key }) => {

@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import styles from './Card.module.scss';
 import CardCheckbox from '../cardCheckbox/CardCheckbox';
 import { IData } from '../main/Main';
@@ -8,7 +8,7 @@ import CardText from '../cardText/CardText';
 import CardFooter from '../cardFooter/CardFooter';
 import CardDate from '../cardDate/CardDate';
 
-const Card: FC<IData> = ({ userId, id, title, completed }) => {
+const Card: FC<IData> = ({ title, completed }) => {
   const [checked, setChecked] = useState(completed);
   const dates = () => (
     <>
@@ -18,7 +18,7 @@ const Card: FC<IData> = ({ userId, id, title, completed }) => {
   );
   const rowTitle = () => (
     <label className={styles.label}>
-      <CardCheckbox completed={checked} setChecked={setChecked} key={id} />
+      <CardCheckbox completed={checked} setChecked={setChecked} />
       <CardTitle title={title} />
     </label>
   );
@@ -27,8 +27,8 @@ const Card: FC<IData> = ({ userId, id, title, completed }) => {
     <>
       {Boolean(!checked) && <div className={styles.container}>
         <form className={styles.card}>
-          <CardRow children={rowTitle} type="title" key={id} />
-          <CardRow children={dates} type="date" key={id}/>
+          <CardRow children={rowTitle} type="title" />
+          <CardRow children={dates} type="date"/>
           <CardText />
           <CardFooter />
         </form>

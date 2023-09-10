@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './HeaderAddBtn.module.scss';
 import icon from './../../public/addBtn.svg';
 

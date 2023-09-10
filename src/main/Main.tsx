@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import './Main.modules.scss';
 import Card from '../card/Card';
 import { Async } from 'react-async';

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './HeaderDisplay.module.scss';
 import { observer } from 'mobx-react-lite';
 import todo from '../store/todo';

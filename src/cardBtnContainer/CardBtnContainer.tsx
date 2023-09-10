@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './CardBtnContainer.module.scss';
 import CardBtn from '../cardBtn/CardBtn';
 
