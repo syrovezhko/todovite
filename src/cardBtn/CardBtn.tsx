@@ -3,8 +3,7 @@ import styles from './CardBtn.module.scss';
 
 const CardBtn = ({ type }: { type: string }) => {
   return (
-    <button className={`${styles.btn} ${styles.type}`}>
-      {type === 'primary' ? 'Entity title' : 'Front-end'}
+      <p>{type === 'primary' ? 'Entity title' : `Front-end`}</p>
     </button>
   );
 };
