@@ -7,7 +7,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
+  max-width: 263px;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 100vh;
   font-family: -apple-system, 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   line-height: 1.5;
