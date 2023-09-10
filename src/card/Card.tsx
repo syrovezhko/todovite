@@ -22,11 +22,16 @@ const Card: FC<IData> = ({ userId, id, title, completed }) => {
       <CardTitle title={title} />
     </label>
   );
+
+  return (
+    <div className={styles.container}>
+      <form className={styles.card}>
         <CardRow children={rowTitle} type="title" />
-      <CardRow children={dates} type="date" />
-      <CardText />
-      <CardFooter />
-    </form>
+        <CardRow children={dates} type="date" />
+        <CardText />
+        <CardFooter />
+      </form>
+    </div>
   );
 };
 
