@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Main.modules.scss';
+import './Main.modules.scss';
 import Card from '../card/Card';
 import { Async } from 'react-async';
 
@@ -23,7 +23,7 @@ const Main = () => {
         if (data) {
           const todo = data;
           return (
-            <main>
+            <main className="main">
               {todo.map((i: IData) => (
                 <Card
                   userId={i.userId}
