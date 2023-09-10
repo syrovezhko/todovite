@@ -5,7 +5,7 @@ import icon from './../../public/addBtn.svg';
 const HeaderAddBtn = () => {
   return (
     <button className={styles.btn}>
-      <img src={icon} alt="add" />
+      <img className={styles.img} src={icon} alt="add" />
     </button>
   );
 };
