@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 import CardDate from '../cardDate/CardDate';
 import styles from './CardRow.module.scss';
 import { useRandomDate } from '../hooks/useRandomDate';
 
-const CardRow = () => {
-  return (
-    <div className={styles.row}>
-      <CardDate date={useRandomDate()} />
-      <CardDate date={useRandomDate()} />
-    </div>
-  );
+interface ICardRow {
+  children: CallableFunction;
+  type: string;
+}
+
+const CardRow: FC<ICardRow> = ({ children, type }) => {
+  return <div className={`${styles.row} ${styles.type}`}>{children()}</div>;
 };
 
 export default CardRow;
