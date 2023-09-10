@@ -16,10 +16,13 @@ const Card: FC<IData> = ({ userId, id, title, completed }) => {
       <CardDate />
     </>
   );
-  return (
-    <form className={styles.card}>
+  const rowTitle = () => (
+    <label className={styles.label}>
       <CardCheckbox completed={checked} setChecked={setChecked} />
       <CardTitle title={title} />
+    </label>
+  );
+        <CardRow children={rowTitle} type="title" />
       <CardRow children={dates} type="date" />
       <CardText />
       <CardFooter />
