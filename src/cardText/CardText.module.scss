@@ -1,0 +1,16 @@
+.text {
+  overflow: hidden;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Segoe UI';
+  height: 20px;
+  align-self: stretch;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.2px;
+}
