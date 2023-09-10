@@ -6,7 +6,7 @@ const CardBtnContainer = () => {
   return (
     <div className={styles.row}>
       <CardBtn type={'primary'} />
-      <CardBtn type={'primary'} />
+      <CardBtn type={'secondary'} />
     </div>
   );
 };
