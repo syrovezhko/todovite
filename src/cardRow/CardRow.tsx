@@ -7,7 +7,7 @@ interface ICardRow {
 }
 
 const CardRow: FC<ICardRow> = ({ children, type }) => {
-  return <div className={`${styles.row} ${`styles.${type}`}`}>{children()}</div>;
+  return <div className={`${styles.row} ${styles[type]}`}>{children()}</div>;
 };
 
 export default CardRow;
