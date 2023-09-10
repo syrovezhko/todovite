@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Main.modules.scss';
 import Card from '../card/Card';
 import { Async } from 'react-async';
+import { observer } from 'mobx-react-lite';
+import todo from '../store/todo';
 
 const fetchData = () =>
   fetch('https://jsonplaceholder.typicode.com/todos')
@@ -14,17 +16,18 @@ export interface IData {
   title?: string;
   completed?: boolean;
 }
-const Main = () => {
+const Main = observer(() => {
   return (
     <Async promiseFn={fetchData}>
       {({ data, error, isLoading }) => {
         if (isLoading) return 'Loading...';
         if (error) return `Something went wrong: ${error.message}`;
         if (data) {
-          const todo = data;
+          todo.fetchTodo(data);
+          // const todo = data;
           return (
             <main className="main">
-              {todo.map((i: IData) => (
+              {todo.todo.map((i: IData) => (
                 <Card
                   userId={i.userId}
                   key={i.id}
@@ -39,6 +42,6 @@ const Main = () => {
       }}
     </Async>
   );
-};
+});
 
 export default Main;

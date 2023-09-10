@@ -18,20 +18,22 @@ const Card: FC<IData> = ({ userId, id, title, completed }) => {
   );
   const rowTitle = () => (
     <label className={styles.label}>
-      <CardCheckbox completed={checked} setChecked={setChecked} />
+      <CardCheckbox completed={checked} setChecked={setChecked} key={id} />
       <CardTitle title={title} />
     </label>
   );
 
   return (
-    <div className={styles.container}>
-      <form className={styles.card}>
-        <CardRow children={rowTitle} type="title" />
-        <CardRow children={dates} type="date" />
-        <CardText />
-        <CardFooter />
-      </form>
-    </div>
+    <>
+      {Boolean(!checked) && <div className={styles.container}>
+        <form className={styles.card}>
+          <CardRow children={rowTitle} type="title" key={id} />
+          <CardRow children={dates} type="date" key={id}/>
+          <CardText />
+          <CardFooter />
+        </form>
+      </div>}
+    </>
   );
 };
 

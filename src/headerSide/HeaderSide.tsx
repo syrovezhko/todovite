@@ -7,7 +7,7 @@ const HeaderSide = () => {
   return (
     <div className={styles.side}>
       <HeaderAddBtn />
-      <HeaderDisplay number={10} />
+      <HeaderDisplay />
     </div>
   );
 };
