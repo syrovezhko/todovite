@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
-import CardDate from '../cardDate/CardDate';
 import styles from './CardRow.module.scss';
-import { useRandomDate } from '../hooks/useRandomDate';
 
 interface ICardRow {
   children: CallableFunction;
