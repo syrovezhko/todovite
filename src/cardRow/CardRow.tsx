@@ -1,9 +1,9 @@
 import React from 'react';
 import CardDate from '../cardDate/CardDate';
-import styles from './CardDateRow.module.scss';
+import styles from './CardRow.module.scss';
 import { useRandomDate } from '../hooks/useRandomDate';
 
-const CardDateRow = () => {
+const CardRow = () => {
   return (
     <div className={styles.row}>
       <CardDate date={useRandomDate()} />
@@ -12,4 +12,4 @@ const CardDateRow = () => {
   );
 };
 
-export default CardDateRow;
+export default CardRow;
