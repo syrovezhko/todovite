@@ -3,7 +3,7 @@ import styles from './CardDate.module.scss';
 import { useRandomDate } from '../hooks/useRandomDate';
 
 const CardDate = () => {
-  return <p>{useRandomDate()}</p>;
+  return <p className={styles.time}>{useRandomDate()}</p>;
 };
 
 export default CardDate;
